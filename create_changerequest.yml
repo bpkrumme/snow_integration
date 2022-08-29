@@ -12,7 +12,7 @@
 
       type: standard
       state: new
-      requested_by: some.user
+      requested_by: abraham.lincoln
       short_description: Application Updated
       description: Application Updated by Red Hat Advanced Cluster Management
       priority: moderate
