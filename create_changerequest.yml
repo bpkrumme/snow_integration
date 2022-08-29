@@ -1,0 +1,19 @@
+---
+- name: Create ServiceNow Change Request
+  hosts: localhost
+  tasks:
+  - name: Create change request
+    servicenow.itsm.change_request:
+      instance:
+        host: "{{ SNOW_INSTANCE }}"
+        username: "{{ SNOW_USERNAME }}" 
+        password: "{{ SNOW_PASSWORD }}"
+
+      type: standard
+      state: new
+      requested_by: some.user
+      short_description: Application Updated
+      description: Application Updated by Red Hat Advanced Cluster Management
+      priority: moderate
+      risk: low
+      impact: low
