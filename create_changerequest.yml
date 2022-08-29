@@ -1,6 +1,7 @@
 ---
 - name: Create ServiceNow Change Request
   hosts: localhost
+  connection: local
   tasks:
   - name: Create change request
     servicenow.itsm.change_request:
